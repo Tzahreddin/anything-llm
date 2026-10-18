@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Thin entrypoints → wiki_ctl.py (mounted at /opt/wiki/bin)
+set -euo pipefail
+DIR="$(cd "$(dirname "$0")" && pwd)"
+exec python3 "${DIR}/wiki_ctl.py" "$@"

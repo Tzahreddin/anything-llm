@@ -1,0 +1,11 @@
+# External Markdown corpus roots for docs-sync (ext:<root-id>:<rel> keys).
+# Paths are expanded with expanduser; host path moves keep stable rel keys via root-id.
+
+roots:
+  awesome-okf:
+    path: ~/dev/awesome-okf
+    pre_sync:
+      - cmd: ["python", "-m", "converters.cli", "--all"]
+        cwd: "{root}"
+        env:
+          PYTHONPATH: "."

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "openproject": {
+      "type": "sse",
+      "url": "http://openproject-mcp:39127/sse",
+      "anythingllm": { "autoStart": true }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "anythingllm-sso-bridge",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Authentik → AnythingLLM Simple-SSO bridge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test lib/*.test.js server.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

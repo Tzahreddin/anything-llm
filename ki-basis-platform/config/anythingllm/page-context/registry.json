@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "localeDefault": "de",
+  "pages": {
+    "skill-view": {
+      "path": "/skill-view.html",
+      "title": "Skill-Ansicht",
+      "blurb": "Hier siehst du, was das System kann (Produkt-Skills, nur lesen). Schreibende Aktionen brauchen Confirm.",
+      "next": [
+        "Skill suchen oder Hub öffnen",
+        "Optional: Skill-Profil mit Defaults setzen",
+        "Im Chat einen Skill gezielt ansprechen"
+      ],
+      "okf": "/playbooks/skill-ansicht.md",
+      "roleHints": ["A", "B"]
+    },
+    "skill-profiles": {
+      "path": "/skill-profiles.html",
+      "title": "Skill-Profile",
+      "blurb": "Persönliche Vorbelegungen über stabile Produkt-Skills — Merge-Reihenfolge beachten.",
+      "next": [
+        "Hub wählen",
+        "Defaults als JSON setzen",
+        "Im Chat ohne Extra-Args nutzen"
+      ],
+      "okf": "/playbooks/skill-profile.md",
+      "roleHints": ["A", "B"]
+    },
+    "skill-runbooks": {
+      "path": "/skill-runbooks.html",
+      "title": "User-Runbooks",
+      "blurb": "Wiederkehrende Schrittfolgen, die du festlegst. Mutierende Steps brauchen Confirm.",
+      "next": [
+        "Runbook anlegen",
+        "Steps prüfen (Dry)",
+        "Execute mit Confirm"
+      ],
+      "okf": "/playbooks/skill-runbooks.md",
+      "roleHints": ["B"]
+    },
+    "learning-goals": {
+      "path": "/learning-goals.html",
+      "title": "Lernziele",
+      "blurb": "Persönliche Lernziele (open/in_progress/done). Aktive Ziele fließen fail-open in den Agent-Kontext.",
+      "next": [
+        "Ziel anlegen",
+        "Status pflegen",
+        "Im Chat Unterstützung annehmen"
+      ],
+      "okf": "/playbooks/usertour.md",
+      "roleHints": ["A", "B"]
+    },
+    "chat-home": {
+      "path": "/",
+      "title": "Chat",
+      "blurb": "Haupt-Chat mit Skills, Confirm-Gates und optional Lernzielen/Seitenkontext.",
+      "next": [
+        "Workspace wählen",
+        "Frage stellen oder Skill nutzen",
+        "Bei Writes Confirm beachten"
+      ],
+      "okf": "/playbooks/erster-start.md",
+      "roleHints": ["A", "B", "C"]
+    }
+  },
+  "fallback": {
+    "title": "KI-Büro",
+    "blurb": "Seitenkontext unbekannt — allgemeine Hilfe: Skill-Ansicht, Profile, Runbooks oder Usertour.",
+    "next": [
+      "Skill-Ansicht öffnen (/skill-view.html)",
+      "Usertour-Playbook lesen",
+      "Konkrete Seite nennen"
+    ],
+    "okf": "/playbooks/usertour.md",
+    "roleHints": ["A", "B", "C"]
+  }
+}

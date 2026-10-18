@@ -1,0 +1,312 @@
+# PM-knowledge wiki: OpenProject AnythingLLM skills (MCP tool table + existing).
+workspace: pm-knowledge
+
+skills:
+  - hub_id: openproject-project-list
+    source: skills/openproject/op_list_projects.md
+    wiki_slug: openproject-projekte-auflisten
+    wiki_title: OpenProject — Projekte auflisten
+  - hub_id: openproject-workpackage-list
+    source: skills/openproject/op_get_project_work_packages.md
+    wiki_slug: openproject-arbeitspakete-auflisten
+    wiki_title: OpenProject — Arbeitspakete im Projekt auflisten
+  - hub_id: openproject-workpackage-create
+    source: skills/openproject/op_create_work_package.md
+    wiki_slug: openproject-arbeitspaket-anlegen
+    wiki_title: OpenProject — Arbeitspaket anlegen
+  - hub_id: openproject-workpackage-status-update
+    source: skills/openproject/op_update_work_package.md
+    wiki_slug: openproject-arbeitspaket-status-aendern
+    wiki_title: OpenProject — Arbeitspaket-Status ändern
+  - hub_id: openproject-workpackage-delete
+    source: skills/openproject/op_delete_work_package.md
+    wiki_slug: openproject-arbeitspaket-loeschen
+    wiki_title: OpenProject — Arbeitspaket löschen
+  - hub_id: openproject-project-get
+    source: skills/openproject/op_get_project.md
+    wiki_slug: openproject-projektdetails
+    wiki_title: OpenProject — Projektdetails
+  - hub_id: openproject-project-create
+    source: skills/openproject/op_create_project.md
+    wiki_slug: openproject-projekt-anlegen
+    wiki_title: OpenProject — Projekt anlegen
+  - hub_id: openproject-project-update
+    source: skills/openproject/op_update_project.md
+    wiki_slug: openproject-projekt-aktualisieren
+    wiki_title: OpenProject — Projekt aktualisieren
+  - hub_id: openproject-project-delete
+    source: skills/openproject/op_delete_project.md
+    wiki_slug: openproject-projekt-loeschen
+    wiki_title: OpenProject — Projekt löschen
+  - hub_id: openproject-project-member-list
+    source: skills/openproject/op_list_project_members.md
+    wiki_slug: openproject-projektmitglieder-auflisten
+    wiki_title: OpenProject — Projektmitglieder auflisten
+  - hub_id: openproject-project-member-add
+    source: skills/openproject/op_add_project_member.md
+    wiki_slug: openproject-projektmitglied-hinzufuegen
+    wiki_title: OpenProject — Projektmitglied hinzufügen
+  - hub_id: openproject-project-member-remove
+    source: skills/openproject/op_remove_project_member.md
+    wiki_slug: openproject-projektmitglied-entfernen
+    wiki_title: OpenProject — Projektmitglied entfernen
+  - hub_id: openproject-project-version-list
+    source: skills/openproject/op_list_project_versions.md
+    wiki_slug: openproject-versionen-auflisten
+    wiki_title: OpenProject — Versionen auflisten
+  - hub_id: openproject-version-create
+    source: skills/openproject/op_create_version.md
+    wiki_slug: openproject-version-anlegen
+    wiki_title: OpenProject — Version anlegen
+  - hub_id: openproject-workpackage-list-all
+    source: skills/openproject/op_list_work_packages.md
+    wiki_slug: openproject-arbeitspakete-global-auflisten
+    wiki_title: OpenProject — Arbeitspakete global auflisten
+  - hub_id: openproject-workpackage-get
+    source: skills/openproject/op_get_work_package.md
+    wiki_slug: openproject-arbeitspaket-details
+    wiki_title: OpenProject — Arbeitspaket-Details
+  - hub_id: openproject-workpackage-update
+    source: skills/openproject/op_update_work_package.md
+    wiki_slug: openproject-arbeitspaket-aktualisieren
+    wiki_title: OpenProject — Arbeitspaket aktualisieren
+  - hub_id: openproject-workpackage-activity-list
+    source: skills/openproject/op_list_work_package_activities.md
+    wiki_slug: openproject-arbeitspaket-aktivitaeten
+    wiki_title: OpenProject — Aktivitäten auflisten
+  - hub_id: openproject-workpackage-comment-add
+    source: skills/openproject/op_add_work_package_comment.md
+    wiki_slug: openproject-arbeitspaket-kommentar
+    wiki_title: OpenProject — Kommentar hinzufügen
+  - hub_id: openproject-workpackage-relation-list
+    source: skills/openproject/op_list_work_package_relations.md
+    wiki_slug: openproject-arbeitspaket-relationen
+    wiki_title: OpenProject — Relationen auflisten
+  - hub_id: openproject-workpackage-relation-create
+    source: skills/openproject/op_create_work_package_relation.md
+    wiki_slug: openproject-arbeitspaket-relation-anlegen
+    wiki_title: OpenProject — Relation anlegen
+  - hub_id: openproject-workpackage-relation-delete
+    source: skills/openproject/op_delete_work_package_relation.md
+    wiki_slug: openproject-arbeitspaket-relation-loeschen
+    wiki_title: OpenProject — Relation löschen
+  - hub_id: openproject-status-list
+    source: skills/openproject/op_list_statuses.md
+    wiki_slug: openproject-status-auflisten
+    wiki_title: OpenProject — Status auflisten
+  - hub_id: openproject-type-list
+    source: skills/openproject/op_list_types.md
+    wiki_slug: openproject-typen-auflisten
+    wiki_title: OpenProject — Typen auflisten
+  - hub_id: openproject-project-type-list
+    source: skills/openproject/op_get_project_types.md
+    wiki_slug: openproject-projekt-typen
+    wiki_title: OpenProject — Typen im Projekt
+  - hub_id: openproject-priority-list
+    source: skills/openproject/op_list_priorities.md
+    wiki_slug: openproject-prioritaeten-auflisten
+    wiki_title: OpenProject — Prioritäten auflisten
+  - hub_id: openproject-user-list
+    source: skills/openproject/op_list_users.md
+    wiki_slug: openproject-benutzer-auflisten
+    wiki_title: OpenProject — Benutzer auflisten
+  - hub_id: openproject-user-get
+    source: skills/openproject/op_get_user.md
+    wiki_slug: openproject-benutzerdetails
+    wiki_title: OpenProject — Benutzerdetails
+  - hub_id: openproject-user-current
+    source: skills/openproject/op_get_current_user.md
+    wiki_slug: openproject-aktueller-benutzer
+    wiki_title: OpenProject — aktueller Benutzer
+  - hub_id: openproject-project-assignee-list
+    source: skills/openproject/op_list_project_assignees.md
+    wiki_slug: openproject-zuweisbare-benutzer
+    wiki_title: OpenProject — zuweisbare Benutzer
+  - hub_id: openproject-role-list
+    source: skills/openproject/op_list_roles.md
+    wiki_slug: openproject-rollen-auflisten
+    wiki_title: OpenProject — Rollen auflisten
+  - hub_id: openproject-group-list
+    source: skills/openproject/op_list_groups.md
+    wiki_slug: openproject-gruppen-auflisten
+    wiki_title: OpenProject — Gruppen auflisten
+  - hub_id: openproject-workpackage-search
+    source: skills/openproject/op_search.md
+    wiki_slug: openproject-arbeitspakete-suchen
+    wiki_title: OpenProject — Arbeitspakete suchen
+  - hub_id: openproject-timeentry-list
+    source: skills/openproject/op_list_time_entries.md
+    wiki_slug: openproject-zeitbuchungen-auflisten
+    wiki_title: OpenProject — Zeitbuchungen auflisten
+  - hub_id: openproject-timeentry-get
+    source: skills/openproject/op_get_time_entry.md
+    wiki_slug: openproject-zeitbuchung-details
+    wiki_title: OpenProject — Zeitbuchung Details
+  - hub_id: openproject-timeentry-create
+    source: skills/openproject/op_create_time_entry.md
+    wiki_slug: openproject-zeitbuchung-anlegen
+    wiki_title: OpenProject — Zeitbuchung anlegen
+  - hub_id: openproject-timeentry-update
+    source: skills/openproject/op_update_time_entry.md
+    wiki_slug: openproject-zeitbuchung-aktualisieren
+    wiki_title: OpenProject — Zeitbuchung aktualisieren
+  - hub_id: openproject-timeentry-delete
+    source: skills/openproject/op_delete_time_entry.md
+    wiki_slug: openproject-zeitbuchung-loeschen
+    wiki_title: OpenProject — Zeitbuchung löschen
+  - hub_id: openproject-timeentry-wp-list
+    source: skills/openproject/op_list_work_package_time_entries.md
+    wiki_slug: openproject-arbeitspaket-zeitbuchungen
+    wiki_title: OpenProject — Zeitbuchungen des Arbeitspakets
+  - hub_id: openproject-attachment-wp-list
+    source: skills/openproject/op_list_work_package_attachments.md
+    wiki_slug: openproject-arbeitspaket-anhaenge
+    wiki_title: OpenProject — Anhänge des Arbeitspakets
+  - hub_id: openproject-attachment-add
+    source: skills/openproject/op_add_work_package_attachment.md
+    wiki_slug: openproject-arbeitspaket-anhang-hinzufuegen
+    wiki_title: OpenProject — Anhang hochladen
+  - hub_id: openproject-attachment-get
+    source: skills/openproject/op_get_attachment.md
+    wiki_slug: openproject-anhang-details
+    wiki_title: OpenProject — Anhang Details
+  - hub_id: openproject-attachment-update
+    source: skills/openproject/op_update_attachment.md
+    wiki_slug: openproject-anhang-aktualisieren
+    wiki_title: OpenProject — Anhang aktualisieren
+  - hub_id: openproject-attachment-delete
+    source: skills/openproject/op_delete_attachment.md
+    wiki_slug: openproject-anhang-loeschen
+    wiki_title: OpenProject — Anhang löschen
+  - hub_id: openproject-project-copy
+    source: skills/openproject/op_copy_project.md
+    wiki_slug: openproject-projekt-kopieren
+    wiki_title: OpenProject — Projekt kopieren
+  - hub_id: openproject-project-ancestors
+    source: skills/openproject/op_list_project_ancestors.md
+    wiki_slug: openproject-projekt-uebergeordnete
+    wiki_title: OpenProject — Übergeordnete Projekte
+  - hub_id: openproject-project-budgets
+    source: skills/openproject/op_list_project_budgets.md
+    wiki_slug: openproject-projekt-budgets
+    wiki_title: OpenProject — Projekt-Budgets
+  - hub_id: openproject-budget-create
+    source: skills/openproject/op_create_project_budget.md
+    wiki_slug: openproject-projekt-budget-anlegen
+    wiki_title: OpenProject — Budget anlegen
+  - hub_id: openproject-project-wikipages
+    source: skills/openproject/op_list_project_wiki_pages.md
+    wiki_slug: openproject-projekt-wikiseiten
+    wiki_title: OpenProject — Wiki-Seiten des Projekts
+  - hub_id: openproject-wp-validate
+    source: skills/openproject/op_validate_work_package.md
+    wiki_slug: openproject-arbeitspaket-validieren
+    wiki_title: OpenProject — Arbeitspaket validieren
+  - hub_id: openproject-wp-revisions
+    source: skills/openproject/op_list_work_package_revisions.md
+    wiki_slug: openproject-arbeitspaket-revisionen
+    wiki_title: OpenProject — Revisions des Arbeitspakets
+  - hub_id: openproject-watcher-list
+    source: skills/openproject/op_list_watchers.md
+    wiki_slug: openproject-arbeitspaket-beobachter
+    wiki_title: OpenProject — Beobachter des Arbeitspakets
+  - hub_id: openproject-watcher-add
+    source: skills/openproject/op_add_watcher.md
+    wiki_slug: openproject-beobachter-hinzufuegen
+    wiki_title: OpenProject — Beobachter hinzufügen
+  - hub_id: openproject-watcher-remove
+    source: skills/openproject/op_remove_watcher.md
+    wiki_slug: openproject-beobachter-entfernen
+    wiki_title: OpenProject — Beobachter entfernen
+  - hub_id: openproject-wp-available-projects
+    source: skills/openproject/op_list_work_package_available_projects.md
+    wiki_slug: openproject-arbeitspaket-zielprojekte
+    wiki_title: OpenProject — Zielprojekte des Arbeitspakets
+  - hub_id: openproject-wp-move
+    source: skills/openproject/op_move_work_package.md
+    wiki_slug: openproject-arbeitspaket-verschieben
+    wiki_title: OpenProject — Arbeitspaket verschieben
+  - hub_id: openproject-principal-search
+    source: skills/openproject/op_search_principals.md
+    wiki_slug: openproject-principals-suchen
+    wiki_title: OpenProject — Principals suchen
+  - hub_id: openproject-user-create
+    source: skills/openproject/op_create_user.md
+    wiki_slug: openproject-benutzer-anlegen
+    wiki_title: OpenProject — Benutzer anlegen
+  - hub_id: openproject-user-update
+    source: skills/openproject/op_update_user.md
+    wiki_slug: openproject-benutzer-aktualisieren
+    wiki_title: OpenProject — Benutzer aktualisieren
+  - hub_id: openproject-user-delete
+    source: skills/openproject/op_delete_user.md
+    wiki_slug: openproject-benutzer-loeschen
+    wiki_title: OpenProject — Benutzer löschen
+  - hub_id: openproject-group-create
+    source: skills/openproject/op_create_group.md
+    wiki_slug: openproject-gruppe-anlegen
+    wiki_title: OpenProject — Gruppe anlegen
+  - hub_id: openproject-group-update
+    source: skills/openproject/op_update_group.md
+    wiki_slug: openproject-gruppe-aktualisieren
+    wiki_title: OpenProject — Gruppe aktualisieren
+  - hub_id: openproject-group-members-set
+    source: skills/openproject/op_set_group_members.md
+    wiki_slug: openproject-gruppe-mitglieder-setzen
+    wiki_title: OpenProject — Gruppenmitglieder setzen
+  - hub_id: openproject-group-delete
+    source: skills/openproject/op_delete_group.md
+    wiki_slug: openproject-gruppe-loeschen
+    wiki_title: OpenProject — Gruppe löschen
+  - hub_id: openproject-query-list
+    source: skills/openproject/op_list_queries.md
+    wiki_slug: openproject-ansichten-auflisten
+    wiki_title: OpenProject — Ansichten auflisten
+  - hub_id: openproject-query-get
+    source: skills/openproject/op_get_query.md
+    wiki_slug: openproject-ansicht-details
+    wiki_title: OpenProject — Ansicht Details
+  - hub_id: openproject-query-create
+    source: skills/openproject/op_create_query.md
+    wiki_slug: openproject-ansicht-anlegen
+    wiki_title: OpenProject — Ansicht anlegen
+  - hub_id: openproject-query-update
+    source: skills/openproject/op_update_query.md
+    wiki_slug: openproject-ansicht-aktualisieren
+    wiki_title: OpenProject — Ansicht aktualisieren
+  - hub_id: openproject-query-delete
+    source: skills/openproject/op_delete_query.md
+    wiki_slug: openproject-ansicht-loeschen
+    wiki_title: OpenProject — Ansicht löschen
+  - hub_id: openproject-grid-list
+    source: skills/openproject/op_list_grids.md
+    wiki_slug: openproject-dashboards-auflisten
+    wiki_title: OpenProject — Dashboards auflisten
+  - hub_id: openproject-grid-create
+    source: skills/openproject/op_create_grid.md
+    wiki_slug: openproject-dashboard-anlegen
+    wiki_title: OpenProject — Dashboard anlegen
+  - hub_id: openproject-grid-update
+    source: skills/openproject/op_update_grid.md
+    wiki_slug: openproject-dashboard-aktualisieren
+    wiki_title: OpenProject — Dashboard aktualisieren
+  - hub_id: openproject-grid-delete
+    source: skills/openproject/op_delete_grid.md
+    wiki_slug: openproject-dashboard-loeschen
+    wiki_title: OpenProject — Dashboard löschen
+  - hub_id: openproject-news-list
+    source: skills/openproject/op_list_news.md
+    wiki_slug: openproject-news-auflisten
+    wiki_title: OpenProject — News auflisten
+  - hub_id: openproject-revisions-list
+    source: skills/openproject/op_list_revisions.md
+    wiki_slug: openproject-revisionen-auflisten
+    wiki_title: OpenProject — Revisions auflisten
+  - hub_id: openproject-myprefs-get
+    source: skills/openproject/op_get_my_preferences.md
+    wiki_slug: openproject-meine-einstellungen
+    wiki_title: OpenProject — Meine Einstellungen
+  - hub_id: openproject-myprefs-update
+    source: skills/openproject/op_update_my_preferences.md
+    wiki_slug: openproject-einstellungen-aktualisieren
+    wiki_title: OpenProject — Einstellungen aktualisieren

@@ -1,0 +1,85 @@
+# AnythingLLM workspaces — je Domäne/Tool ein Workspace, Quelle = OKF-Bundle
+
+workspaces:
+  - slug: pm-knowledge
+    name: PM-knowledge
+    sources:
+      - kind: tree_all_md
+        path: ki-basis:docs/knowledge/wiki
+    description: >
+      Runtime-Kanon unter ~/docker-data/ki-basis/PM-knowledge (DEC-0030).
+      Seed/OKF aus docs/knowledge/wiki; Agent pflegt via wiki-* Skills (Hermes-Muster).
+      Workspace neu oder bestehend — wiki_init fragt den Nutzer.
+      Chat-Prompt/Pins: config/anythingllm/pm-knowledge-prompt.json (Agent nie VA/AA active).
+
+  - slug: llm-wiki
+    name: llm-wiki — Rules & Prozesse (legacy alias)
+    sources:
+      - kind: tree_all_md
+        path: ki-basis:docs/knowledge/wiki
+    description: Legacy-Slug; bevorzugt pm-knowledge nutzen
+
+  - slug: ki-basis
+    name: ki-basis — Platform
+    sources:
+      - kind: tree_all_md
+        path: ki-basis:docs/knowledge
+    description: Docker, Datenbanken, SSO und gemeinsame Services
+
+  - slug: paperless-ngx
+    name: paperless-ngx — Dokumenten-Agent
+    sources:
+      - kind: tree_all_md
+        path: ki-basis:docs/knowledge/paperless
+    description: Dokumente suchen/lesen, Tags anlegen; Löschen/Workflow per Deep-Link in die Paperless-UI
+
+  - slug: firefly-iii
+    name: firefly-iii — Beleg-Stack
+    sources:
+      - kind: tree_all_md
+        path: ki-basis:docs/knowledge/firefly
+    description: Buchungen/Konten ansehen und Belege anlegen via AnythingLLM-Skills (REST, kein MCP)
+
+  # - slug: ollama
+  #   name: Ollama — Lokales LLM
+  #   okf_path: docs/knowledge/ollama
+  #   description: Modellverwaltung und API
+
+  # - slug: speaches
+  #   name: Speaches — STT / TTS
+  #   okf_path: docs/knowledge/speaches
+  #   description: OpenAI-kompatible Sprach-API (SSE, Mehrbenutzer)
+
+  - slug: benutzer_chat
+    name: Benutzer_Chat
+    sources: []
+    description: >
+      Allgemeiner Benutzer-Chat; LLM direkt über oMLX (Modell aus GENERIC_OPEN_AI_MODEL_PREF).
+      Einstieg für Conversation Gate: Skill orchestrator-conversation-gate pro Nachricht
+      aufrufen — routet zu general_chat, workspace_chat (RAG) oder Tool-Pfad.
+
+  - slug: authentik
+    name: Authentik — IAM / SSO
+    sources:
+      - kind: files
+        path: ki-basis:docs/AUTHENTIK.md
+      - kind: tree_all_md
+        path: ki-basis:config/authentik
+    description: Platform IdP (DEC-0027); OIDC optional; Psono bleibt Vault
+
+  - slug: awesome-okf
+    name: awesome-okf — OKF Software-Wiki
+    sources:
+      - kind: tree_all_md
+        path: ext:awesome-okf:bundles
+    description: >
+      Self-hosted/OSS-Konzepte aus awesome-okf Bundles; Embeddings via AnythingLLM pgvector.
+
+  - slug: qualitaet
+    name: qualitaet — Richtlinien ↔ OSS+AI (Demo)
+    sources:
+      - kind: tree_all_md
+        path: ki-basis:docs/products/ki-buero/demo/qualitaet
+    description: >
+      MVP #508: Qualitätsrichtlinien/Best-Practice (Demo-Fixture) für Matching
+      gegen Workspace awesome-okf per Chat/Multi-Attach. Keine Zertifizierungsaussage.
